@@ -17,9 +17,9 @@ export default function Membership() {
         }
     ]
     return (
-        <div className="flex flex-wrap w-full">
+        <div className="flex w-full flex-wrap">
             {items.map((item, index) => (
-                <div key={index} className={index === 0 || index === 1 ? "flex items-center text-center px-8 py-16 flex-col w-1/3 border-r border-b" : "flex items-center text-center px-8 py-16 flex-col w-1/3 border-b"}>
+                <div key={index} className={index === 0 || index === 1 ? "flex items-center text-center px-8 py-16 flex-col md:w-1/3 sm:w-full md:border-r sm:border-r-0 border-b" : "flex items-center text-center px-8 py-16 flex-col md:w-1/3 sm:w-full border-b"}>
                     <h1 className="font-semibold font-teko text-2xl uppercase">{item.membership}</h1>
                     <span className="font-unica uppercase">{item.price}</span>
                     <p className="font-roboto max-w-[200px] pt-2">{item.description}</p>

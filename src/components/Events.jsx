@@ -22,9 +22,9 @@ export default function Events() {
         },
     ]
     return (
-        <div className="flex w-full">
+        <div className="md:flex w-full md:flex-nowrap sm:flex-wrap sm:flex">
             {items.map((item, index) => (
-                <div key={index} className={index === 3 ? "flex flex-col border-b" : "flex flex-col border-r border-b"}>
+                <div key={index} className={index === 3 ? "flex flex-col border-b" : "flex flex-col md:border-r sm:border-r-0 border-b"}>
                     <img src={item.image} alt="A photo of one of the event categories." />
                     <div className="flex flex-col text-center uppercase p-4 border-t">
                         <h1 className="font-teko font-semibold text-lg">{item.title}</h1>

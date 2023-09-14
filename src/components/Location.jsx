@@ -34,8 +34,8 @@ export default function Location() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-2 border-b">
-                <div className="flex flex-col gap-4 uppercase font-teko font-semibold text-2xl border-r p-8 text-center items-center">
+            <div className="md:grid md:grid-cols-2 md:border-b sm:flex sm:flex-wrap">
+                <div className="flex flex-col gap-4 uppercase font-teko font-semibold text-2xl border-r p-8 text-center md:border-r items-center sm:w-full sm:border-r-0">
                     <span>Accessible via</span>
                     <div className="flex gap-4">
                         <img src="/a-line.svg" alt="Subway line A" />
@@ -44,15 +44,15 @@ export default function Location() {
                     </div>
                     <span>57th street</span>
                 </div>
-                <div className="flex flex-col gap-1 p-8 items-start justify-center">
+                <div className="flex flex-col gap-1 p-8 items-start justify-center sm:border-t sm:border-b md:border-t-0 md:border-b-0 sm:text-center sm:items-center md:items-start md:text-start">
                     <h1 className="uppercase font-semibold font-teko text-2xl">In the heart of Financial District</h1>
                     <p className="font-roboto">Located on the iconic Wall Street in the center of FiDi - one of the busiest neighborhoods of Lower Manhattan. Minutes away from New York Stock Exchange, Battery Park, and One World Trade Center. Easily accessible from all five boroughs of NYC.</p>
                 </div>
             </div>
 
-            <div className="flex border-b w-full uppercase">
+            <div className="md:flex border-b w-full uppercase md:flex-nowrap sm:flex-wrap sm:flex">
                 {boroughs.map((borough, index) => (
-                    <div key={index} className={index === 4 ? "text-center flex flex-col gap-1 w-1/5 p-4" : "text-center flex flex-col gap-1 border-r w-1/5 p-4"}>
+                    <div key={index} className={index === 4 ? "location text-center flex flex-col gap-1 md:w-1/5 sm:w-full sm:border-t md:border-t-0 p-4" : "location text-center flex flex-col gap-1 md:border-r sm:border-r-0 md:w-1/5 sm:w-1/2 p-4"}>
                         <h1 className="font-teko">{borough.name}</h1>
                         <span className="font-unica text-2xl">{borough.time}</span>
                     </div>

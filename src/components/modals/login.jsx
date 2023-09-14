@@ -24,7 +24,7 @@ export default function Login({isOpen, setIsOpen}) {
                 </div>
                 <span className="underline cursor-pointer">reset password</span>
             </div>
-            <button type="Submit" form="form" className="w-full border bg-accent font-teko font-semibold text-center p-2 mt-4 hover:bg-hover hover:transition-all text-2xl">Log in</button>
+            <button type="Submit" form="form" className="w-full border bg-accent font-teko font-semibold text-center p-2 mt-4 hover:bg-hover hover:transition-all md:text-2xl sm:text-xl">Log in</button>
             {isPseudoSubmit && (
                 <span>This is a frontend project, so there&apos;s no actual user dashboard for it ;&#41;</span>
             )}

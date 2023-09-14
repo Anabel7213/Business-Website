@@ -19,6 +19,10 @@ export default {
       "white": "#FFFFFF",
       "hover": "#BEA785",
       "black": "#000000"
+    },
+    screens: {
+      "sm": "394px",
+      "md": "764px"
     }
   },
   plugins: [],

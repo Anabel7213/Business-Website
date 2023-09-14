@@ -36,7 +36,7 @@ export default function Amenities() {
     return (
         <div className="w-full flex flex-wrap">
         {items.map((item, index) => (
-            <div key={index} className={index === 0 || index === 1 || index === 2 || index === 4 || index === 5 || index === 6 ? "flex flex-col gap-1 p-4 w-1/4 text-center justify-center items-center uppercase border-b border-r" : "flex flex-col gap-1 p-4 w-1/4 text-center justify-center items-center uppercase border-b"}>
+            <div key={index} className={index === 0 || index === 1 || index === 2 || index === 4 || index === 5 || index === 6 ? "flex flex-col gap-1 p-4 md:w-1/4 sm:w-full text-center justify-center items-center uppercase border-b md:border-r sm:border-r-0" : "flex flex-col gap-1 p-4 md:w-1/4 sm:w-full text-center justify-center items-center uppercase border-b"}>
                 <h1 className="font-teko text-lg">{item.title}</h1>
                 <span className="font-unica">{item.subtitle}</span>
             </div>

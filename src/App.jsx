@@ -17,7 +17,7 @@ import Login from "./components/modals/login";
 export default function App() {
   const [ isOpen, setIsOpen ] = useState(false)
   return (
-    <div className="m-8 border">
+    <div className="md:m-8 sm:m-4 border">
     <Header setIsOpen={setIsOpen} />
     <Hero />
     <Section id="about" title="About" subtitle="section .01" />
