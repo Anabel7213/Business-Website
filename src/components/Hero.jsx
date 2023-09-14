@@ -26,8 +26,8 @@ export default function Hero() {
             </div>
             {!isSubmitted ? (
             <div className="flex border mb-4 w-fit">
-                <input type="email" name="email" value={data} onChange={(e) => {setData(e.target.value)}} placeholder="Email" className="outline-0 p-3 font-roboto bg-white md:w-[364px] sm:w-[264px]"/>
-                <button onClick={HandlePseudoSubmit} className="px-6 sm:w-[164px] md:w-fit py-2 bg-accent hover:bg-hover hover:transition-all border-l uppercase font-teko font-semibold">{isLoading ? "Hold on tight" : "Request tour"}</button>
+                <input type="email" name="email" value={data} onChange={(e) => {setData(e.target.value)}} placeholder="Email" className="outline-0 p-3 font-roboto bg-white md:w-[364px] sm:w-[224px]"/>
+                <button onClick={HandlePseudoSubmit} className="px-6 w-fit py-2 bg-accent hover:bg-hover hover:transition-all border-l uppercase font-teko font-semibold">{isLoading ? "Hold on tight" : "Request tour"}</button>
             </div>
             ) : <Request cover="grid-bg" showSubtitle="true" title="check your inbox for invitation." description="Please select a date and time that best fits your schedule for an exclusive, personalized tour of The Zone's exquisite space. You'll be accompanied by your own dedicated guide." subtitle="Thank you. We look forward to seeing you." /> }
             <div className={!isSubmitted ? "w-full h-fit border-b border-t md:grid md:grid-cols-3 sm:flex" : "w-full h-fit border-b md:grid md:grid-cols-3 sm:flex"}>
